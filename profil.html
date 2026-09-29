@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Member - Bunaken Conservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark">
+
+  <!-- NAVIGASI UTAMA -->
+  <header class="site-header">
+    <div class="brand">Bunaken Member Zone</div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="struktur.html">Struktur &amp; Villa</a></li>
+        <li><a href="profil.html" class="active">Profil Member</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container profile-grid">
+    <!-- KARTU PROFIL MEMBER -->
+    <section class="profile-card-container">
+      <h2>Kartu Anggota Digital</h2>
+      <div class="id-card">
+        <div class="card-header">
+          <span class="card-logo">BUNAKEN ECO-CLUB</span>
+          <span class="status-active">AKTIF</span>
+        </div>
+        <div class="card-body">
+          <div class="avatar-placeholder">👤</div>
+          <div class="user-details">
+            <h3 id="display-nama">Christian L.</h3>
+            <p id="display-email">christian@example.com</p>
+            <p>Tipe: <strong id="display-tipe">Penyelam Aktif</strong></p>
+            <p class="member-id">ID: BKN-2026-9902</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM INPUT UPDATE / DAFTAR PROFIL -->
+    <section class="profile-form-container">
+      <h2>Perbarui Profil / Daftar Member</h2>
+      <form action="#" method="post" class="form-styled dark-form">
+        <label for="prof-nama">Nama Lengkap</label>
+        <input type="text" id="prof-nama" name="prof-nama" value="Christian L." required>
+
+        <label for="prof-email">Email Utama</label>
+        <input type="email" id="prof-email" name="prof-email" value="christian@example.com" required>
+
+        <label for="prof-tipe">Kategori Anggota</label>
+        <select id="prof-tipe" name="prof-tipe">
+          <option value="Penyelam Aktif" selected>Penyelam Aktif</option>
+          <option value="Relawan Konservasi">Relawan Konservasi</option>
+          <option value="Pengunjung Umum">Pengunjung Umum</option>
+        </select>
+
+        <label for="prof-bio">Bio Singkat</label>
+        <textarea id="prof-bio" name="prof-bio" rows="3" placeholder="Tulis cerita singkatmu tentang wisata laut..."></textarea>
+
+        <button type="submit" class="btn btn-accent">Simpan Profil</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Bunaken Community Member Area &copy; 2026</p>
+  </footer>
+</body>
+</html>
